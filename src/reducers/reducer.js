@@ -54,10 +54,7 @@ export const reducer = (state = initialState, action) => {
           })
         },
         additionalPrice: state.additionalPrice - action.payload.price,
-        additionalFeatures: []
-
-        })
-
+        additionalFeatures: [...state.additionalFeatures, action.payload]
 
       }
       
